@@ -1,0 +1,23 @@
+# Keep MCP and Copilot local config out of git
+
+# VS Code profile/workspace MCP config files
+.vscode/mcp.json
+mcp.json
+mcp/*.json
+mcp.config.json
+
+# Environment files (tokens, API keys)
+.env
+.env.*
+*.env
+
+# Secrets and credentials
+secrets/
+*.secrets.json
+*.key
+*.pem
+*.pfx
+
+# Logs and local runtime artifacts
+logs/
+*.log
