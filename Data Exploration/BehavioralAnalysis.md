@@ -64,8 +64,8 @@ Figure 3: Assistant-suggested next steps for mitigation, follow-up queries, and 
 
  References to find out more information:
 
-[Microsoft Sentinel MCP Server - Overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview)
+- [Microsoft Sentinel MCP Server - Overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview)
 
- [Microsoft Sentinel MCP Server - Tool Collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-tools-overview)
+- [Microsoft Sentinel MCP Server - Tool Collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-tools-overview)
 
- [Sentinel MCP data exploration collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool)
+- [Sentinel MCP data exploration collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool)
