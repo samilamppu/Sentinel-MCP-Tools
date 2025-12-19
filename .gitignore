@@ -21,3 +21,6 @@ secrets/
 # Logs and local runtime artifacts
 logs/
 *.log
+
+# Draft files
+Data Exploration/EntityAnalyzer.md
