@@ -15,15 +15,21 @@ Use `context.md` to give GitHub Copilot + Sentinel MCP server a small, consisten
 
 
 ## Benefits
+
  **Consistency & Tool-Aware Guidance**: Shared scope, terms, and steps keep MCP responses aligned.
+
  **Reproducibility & Auditability**: Versioned context yields repeatable runs and clear review trails.
+
  **Determinism**: Reduces variance across prompts and analysts for stable outcomes.
+
  **Speed & Focus**: Cuts setup time by front-loading scope, filters, and preferred queries.
+
  **Secret Hygiene**: Non-sensitive file; keep credentials in env vars or keychain.
+
  **Modularity & Onboarding**: Small per-scenario files scale well and ramp new analysts faster.
 
 
-## How to Use This Page
+## How to Use Context.md
 1. Prepare a scenario-specific `context.md` for behavioral analysis (data source names, important fields, filters, definitions, risk cues, and preferred query templates).
 2. Start the Sentinel Data Exploration MCP server for your profile/session.
 3. In Copilot Chat (with MCP enabled), attach or reference your `context.md` so the assistant and tools share the same framing. If attachment is unavailable, paste the relevant sections.
@@ -35,11 +41,3 @@ Use `context.md` to give GitHub Copilot + Sentinel MCP server a small, consisten
 - Access to your Microsoft Sentinel workspace and sign-in/identity telemetry.
 - Sentinel Data Lake enabled and configured.
 - Sentinel MCP server installed and accessible locally/remote. Means practically local MCP client configuration (e.g., `mcp.json`) pointing to your server.
-
-## Publishing Hygiene
-- Redact identifiers: avoid tenant IDs, subscription IDs, UPNs/emails, IPs, and GUIDs in docs and screenshots.
-- Sanitize images: ensure `media/` PNGs don’t display internal names, domains, workspace IDs, or query outputs with sensitive data.
-- Keep secrets out: never commit `mcp.json`, tokens, keys, or connection strings; use environment variables or keychain.
-- Sample queries: if sharing KQL, remove org-specific watchlist names, resource IDs, or proprietary labels.
-- Tool endpoints: stick to Microsoft Learn–documented MCP collection URLs; avoid private endpoints or feature flags.
-- Review before publishing: run a quick grep for emails/IPs/GUIDs and eyeball images for identifiers.
