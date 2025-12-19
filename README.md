@@ -16,17 +16,23 @@ Use `context.md` to give GitHub Copilot + Sentinel MCP server a small, consisten
 
 ## Benefits
 
- **Consistency & Tool-Aware Guidance**: Shared scope, terms, and steps keep MCP responses aligned.
+ **Consistency & Tool-Aware Guidance**:
+ - Shared scope, terms, and steps keep MCP responses aligned.
 
- **Reproducibility & Auditability**: Versioned context yields repeatable runs and clear review trails.
+ **Reproducibility & Auditability**:
+ - Versioned context yields repeatable runs and clear review trails.
 
- **Determinism**: Reduces variance across prompts and analysts for stable outcomes.
+ **Determinism**:
+ - Reduces variance across prompts and analysts for stable outcomes.
 
- **Speed & Focus**: Cuts setup time by front-loading scope, filters, and preferred queries.
+ **Speed & Focus**:
+ - Cuts setup time by front-loading scope, filters, and preferred queries.
 
- **Secret Hygiene**: Non-sensitive file; keep credentials in env vars or keychain.
+ **Secret Hygiene**:
+ - Non-sensitive file; keep credentials in env vars or keychain.
 
- **Modularity & Onboarding**: Small per-scenario files scale well and ramp new analysts faster.
+ **Modularity & Onboarding**:
+ - Small per-scenario files scale well and ramp new analysts faster.
 
 
 ## How to Use Context.md
