@@ -3,7 +3,7 @@
 ## Introduction
 The goal with the scenario based approach is to enhance investigations and make retro-hunting repeatable, and fast by grounding Sentinel MCP data exploration with a concise, versioned context file that encodes scope, assumptions, and preferred analysis patterns. 
 
-Behavioral analysis focuses on user sign-in activity (e.g., unusual IP diversity, geolocation changes, user agent anomalies, and IP reputation checks) using Microsoft Sentinel data lake via the [Sentinel MCP data exploration tool collection](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool).
+Behavioral analysis focuses on user sign-in activity (e.g., unusual IP diversity, geolocation changes, user agent anomalies, and IP reputation checks) using Microsoft Sentinel data lake via the [Sentinel MCP data exploration](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-data-exploration-tool) and [Triage tool collections](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-triage-tool).
 
 These instructions are evaluated primarily in VS Code with Copilot + Sentinel MCP, but also work in other MCP-enabled AI tools that can leverage the same context, including Microsoft Foundry, Copilot Studio, Microsoft Security Copilot, and OpenAI ChatGPT.
 
@@ -38,28 +38,43 @@ Summarize and provide plans
 - Summarize all steps taken in a way that helps readers understand. Also, add mitigation and remediation plans.
 
 
-Figure 1: Behavioral analysis of a user entity in VS Code using the Sentinel Data Exploration MCP tools.
+## Sample Prompts
+- "Find all users who have signed in from the most distinct IP addresses in the last 30 days"
+- "Show me users with unusual geolocation changes in their sign-in patterns"
+- "Identify users with suspicious user agent anomalies in their authentication activity"
+- "Check IP reputation for all sign-in attempts from the top 5 users with most distinct IPs"
+- "Analyze sign-in behavior for users and highlight any country-based anomalies"
+- "Find users signing in from high-risk locations or IPs with bad reputation"
+
+
+Figure 1: Behavioral analysis of an entity in VS Code using the Sentinel Data Exploration MCP tools. The investigation flow analyzes top 3 users with distinct IP address in the environment. In the demo environment in scope, only 1 user was found with distinct IP address.
+
 <p align="center">
-  <img src="../media/BehavioralAnalysis-1.png" alt="User entity behavioral analysis through VS Code" width="800" />
+  <img src="../media/BehavioralAnalysis-6-0.png" alt="Check IP reputation for all sign-in attempts from the top 3 users with most distinct IPs" width="800" />
  </p>
 
-Figure 2: Summary view highlighting anomalous IP diversity, geo changes, and user-agent signals.
+Figure 2: Summary of IP reputation analysis.
 <p align="center">
-  <img src="../media/BehavioralAnalysis-2.png" alt="Behavioral analysis summary" width="800" />
+  <img src="../media/BehavioralAnalysis-6.png" alt="IP reputation analysis summary" width="800" />
  </p>
 
-Figure 3: Assistant-suggested next steps for mitigation, follow-up queries, and monitoring improvements.
+Figure 3: IP Address breakdown by success rate.
 <p align="center">
-  <img src="../media/BehavioralAnalysis-3.png" alt="Here you can see how the agent suggests further activities" width="800" />
+  <img src="../media/BehavioralAnalysis-7.png" alt="Success rate breakdown" width="800" />
  </p>
 
- Figures 4 & 5: Adding add cross-links to earlier analysis and graph sections that were executed earlier.
+ Figures 4 & 5: Application usage analysis & IP address security indicators.
  <p align="center">
-  <img src="../media/BehavioralAnalysis-4.png" alt="Here you can see how the agent suggests further activities" width="800" />
+  <img src="../media/BehavioralAnalysis-8.png" alt="" width="800" />
  </p>
 
  <p align="center">
-  <img src="../media/BehavioralAnalysis-5.png" alt="Here you can see how the agent suggests further activities" width="800" />
+  <img src="../media/BehavioralAnalysis-9.png" alt="" width="800" />
+ </p>
+
+Figure 6: Recommendations and summary statistics.
+ <p align="center">
+  <img src="../media/BehavioralAnalysis-10.png" alt="" width="800" />
  </p>
 
  References to find out more information:
